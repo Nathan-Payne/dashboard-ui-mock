@@ -1,0 +1,11 @@
+{
+  "name": "2021-dashboard_ui_mock",
+  "version": "1.0.0",
+  "description": "Dashboard UI",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Payne",
+  "license": "ISC"
+}
