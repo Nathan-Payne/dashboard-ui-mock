@@ -2,3 +2,8 @@
 @use 'base/typography';
 
 @use 'components/sidebar';
+@use 'components/content';
+
+body {
+  display: flex;
+}

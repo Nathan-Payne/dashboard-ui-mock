@@ -1,0 +1,77 @@
+@use '../base/colors' as *;
+
+.content {
+  width: 100%;
+  height: 100vh;
+  background-color: $grey-50;
+  padding-left: 2.5rem;
+
+  header h1 {
+    margin-top: 2.5rem;
+  }
+
+  .calls {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+
+    h2 {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    &__next {
+      flex: 1;
+
+      .call-info {
+        width: 100%;
+        padding-bottom: 1.8rem;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+
+        &__title {
+          width: 30%;
+          margin: 0;
+        }
+
+        &__content {
+          padding-left: 2rem;
+        }
+      }
+    }
+
+    &__monthly {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      section {
+        position: relative;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+
+        .number {
+          font-size: 6rem;
+        }
+
+        .total {
+          font-weight: 700;
+          color: $grey-200;
+        }
+
+        .dial {
+          position: absolute;
+          height: 50%;
+          width: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%);
+        }
+      }
+    }
+  }
+}
