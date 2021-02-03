@@ -17,7 +17,6 @@ class SplitBarChart {
     for (let i = 0; i < 5; i++) {
       randomPercentages.push((Math.random() * 50).toFixed(0))
     }
-    this.generatedData = randomPercentages
     return randomPercentages
   }
 

@@ -124,7 +124,7 @@ p {
 .content .calls__next .call-info__content {
   padding-left: 2rem;
 }
-.content .calls__next .call-info__content div {
+.content .calls__next .call-info__content p {
   margin-bottom: 0.4rem;
 }
 .content .calls__monthly {
