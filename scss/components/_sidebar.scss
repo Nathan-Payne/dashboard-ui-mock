@@ -1,16 +1,24 @@
 @use '../base/colors' as *;
+@use '../base/mixins' as *;
 
 .sidebar {
   letter-spacing: 2px;
-  height: 100vh;
-  width: 28vw;
+  min-height: 100vh;
+  width: 24vw;
   padding-top: 0.8rem;
   background-color: $grey-800;
   color: white;
 
   &--title {
     color: $grey-200;
-    padding-left: 2rem;
+    padding-left: 0.8rem;
+
+    @include md {
+      padding-left: 1.5rem;
+    }
+    @include lg {
+      padding-left: 2rem;
+    }
   }
 
   .welcome,
@@ -24,7 +32,14 @@
     padding-bottom: 1rem;
   }
   .welcome div:last-child {
-    padding-left: 2rem;
+    padding-left: 0.8rem;
+
+    @include md {
+      padding-left: 1.5rem;
+    }
+    @include lg {
+      padding-left: 2rem;
+    }
   }
 
   nav {
@@ -33,7 +48,14 @@
       padding: 0;
 
       li {
-        padding: 1.4rem 0 1.4rem 2rem;
+        padding: 1.4rem 0 1.4rem 0.8rem;
+
+        @include md {
+          padding-left: 1.5rem;
+        }
+        @include lg {
+          padding-left: 2rem;
+        }
 
         &:hover {
           background-color: $grey-700;

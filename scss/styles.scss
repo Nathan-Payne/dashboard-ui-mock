@@ -1,9 +1,7 @@
 @use 'base/colors';
+@use 'base/breakpoints';
+@use 'base/mixins';
 @use 'base/typography';
 
 @use 'components/sidebar';
 @use 'components/content';
-
-body {
-  display: flex;
-}

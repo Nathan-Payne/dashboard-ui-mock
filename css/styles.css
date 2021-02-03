@@ -6,15 +6,25 @@ body {
 
 .sidebar {
   letter-spacing: 2px;
-  height: 100vh;
-  width: 28vw;
+  min-height: 100vh;
+  width: 24vw;
   padding-top: 0.8rem;
   background-color: #333333;
   color: white;
 }
 .sidebar--title {
   color: #d9d9d9;
-  padding-left: 2rem;
+  padding-left: 0.8rem;
+}
+@media (min-width: 768px) {
+  .sidebar--title {
+    padding-left: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sidebar--title {
+    padding-left: 2rem;
+  }
 }
 .sidebar .welcome,
 .sidebar .metrics,
@@ -26,23 +36,51 @@ body {
   padding-bottom: 1rem;
 }
 .sidebar .welcome div:last-child {
-  padding-left: 2rem;
+  padding-left: 0.8rem;
+}
+@media (min-width: 768px) {
+  .sidebar .welcome div:last-child {
+    padding-left: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sidebar .welcome div:last-child {
+    padding-left: 2rem;
+  }
 }
 .sidebar nav ul {
   list-style: none;
   padding: 0;
 }
 .sidebar nav ul li {
-  padding: 1.4rem 0 1.4rem 2rem;
+  padding: 1.4rem 0 1.4rem 0.8rem;
+}
+@media (min-width: 768px) {
+  .sidebar nav ul li {
+    padding-left: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sidebar nav ul li {
+    padding-left: 2rem;
+  }
 }
 .sidebar nav ul li:hover {
   background-color: #3d3d3d;
   font-weight: 700;
 }
 
+body {
+  display: flex;
+}
+
+p {
+  margin: 0;
+}
+
 .content {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: white;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
@@ -60,8 +98,14 @@ body {
 }
 .content .calls {
   width: 100%;
-  height: 42vh;
+  min-height: 42vh;
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .content .calls {
+    flex-direction: row;
+  }
 }
 .content .calls__next {
   flex: 1;
@@ -84,6 +128,7 @@ body {
   margin-bottom: 0.4rem;
 }
 .content .calls__monthly {
+  min-height: 42vh;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -118,14 +163,23 @@ body {
   color: #dddddd;
   z-index: 0;
 }
+.content .topic-breakdown {
+  min-height: 42vh;
+  margin-bottom: 2rem;
+}
 .content .topic-breakdown__title {
   margin-top: 0;
   margin-bottom: 2.5rem;
 }
 .content .topic-breakdown__legend {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .content .topic-breakdown__legend {
+    justify-content: space-between;
+  }
 }
 .content .topic-breakdown__legend .legend-item {
   display: flex;
@@ -211,10 +265,6 @@ body {
 }
 .content .topic-breakdown__chart .chart-bars .bar--purple {
   background-color: #8f71dd;
-}
-
-body {
-  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
